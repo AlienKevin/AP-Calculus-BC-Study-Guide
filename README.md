@@ -4,13 +4,13 @@
 
 The original project was conducted at the Derryfield School in preparation for the 2019 exam.
 
-### Contribut*ors*
+### Contributors
 
 - Kevin Li
 - Max Karpawich
 
 
-### Contribut*ing*
+### Contributing
 
 Open an Issue or submit a Pull Request with your suggested changes.
 
