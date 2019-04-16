@@ -4,7 +4,7 @@
 
 The original project was conducted at the Derryfield School in preparation for the 2019 exam.
 
-Click [here](https://alienkevin.github.io/AP-Calculus-BC-Study-Guide/docs/index.html#/) to view the study guide📖.
+Click [here](https://alienkevin.github.io/AP-Calculus-BC-Study-Guide/docs/) to view the study guide📖.
 
 ### Contributing
 
