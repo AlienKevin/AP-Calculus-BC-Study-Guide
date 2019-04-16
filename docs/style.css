@@ -10,7 +10,11 @@
     -moz-user-select: all;
     -webkit-user-select: all;
     -ms-user-select: all;
+
+    overflow-x: auto;
+    overflow-y: hidden;
 }
+
 *::selection {
     background: #88d5b2;
 }
