@@ -46,6 +46,51 @@ g'(x) &= \frac{1}{f'(g(x))}&f(g(x))=x
 \end{aligned}
 $$
 
+# Integration Techniques
+
+## Proof of Integration by Parts
+
+$$
+\begin{align}
+\frac{d}{dx}[uv]&=\frac{d}{dx}[u]v+u\frac{d}{dx}[v]\\
+
+\int\frac{d}{dx}[uv]dx&=\int\frac{d}{dx}[u]vdx+\int u\frac{d}{dx}[v]dx\\
+
+uv&=\int\frac{du}{dx}vdx+\int u\frac{dv}{dx}dx\\
+
+uv&=\int vdu+\int udv\\
+\int udv &= uv - \int vdu\\
+\end{align}
+$$
+
+## Proof of Tabular Integration
+
+$$
+\begin{array}
+\hline
+	u & dv\\
+	u^{(1)} & v\\
+	u^{(2)} & v^{(-1)}\\
+	u^{(3)} & v^{(-2)}\\
+	\vdots & \vdots \\
+	u^{(n)} & v^{(-(n-1))}\\
+	0 & v^{(-n)}
+\end{array}
+$$
+
+
+$$
+\begin{array}
+\hline
+\int udv = uv - &\hspace{-1em}\underbrace {\int vu^{(1)}dx}\\
+&(u^{(1)}v^{(-1)} - &\hspace{-1em}\underbrace{\int v^{(-1)}u^{(2)}dx})\\
+&&(u^{(2)}v^{(-2)} - &\hspace{-1.1em}\int v^{(-2)}u^{(3)}dx)\\
+&&& \hspace{1.5em}{\vdots}\\
+&&& (u^{(n-1)}v^{(-(n-1))}+ (-1)^{(n-1)} &\hspace{-1em}\underbrace{\int v^{(-(n-1))}u^{(n)}dx})\\
+&&&&(u^{(n)}v^{(-n)} - &\hspace{-2.5em}\cancelto{0}{\int v^{(-n)}u^{(n+1)}dx})
+\end{array}
+$$
+
 # Application of Integrals
 
 ## [Arc Length](http://tutorial.math.lamar.edu/Classes/CalcII/ArcLength.aspx)
