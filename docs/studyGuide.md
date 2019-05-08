@@ -51,45 +51,41 @@ $$
 ## Proof of Integration by Parts
 
 $$
-\begin{align}
-\frac{d}{dx}[uv]&=\frac{d}{dx}[u]v+u\frac{d}{dx}[v]\\
-
+\begin{aligned} \frac{d}{dx}[uv]&=\frac{d}{dx}[u]v+u\frac{d}{dx}[v]\\
 \int\frac{d}{dx}[uv]dx&=\int\frac{d}{dx}[u]vdx+\int u\frac{d}{dx}[v]dx\\
 
 uv&=\int\frac{du}{dx}vdx+\int u\frac{dv}{dx}dx\\
 
-uv&=\int vdu+\int udv\\
-\int udv &= uv - \int vdu\\
-\end{align}
+uv&=\int vdu+\int udv\\ \int udv &= uv - \int vdu\\
+\end{aligned}
 $$
 
 ## Proof of Tabular Integration
 
 $$
-\begin{array}
-\hline
-	u & dv\\
-	u^{(1)} & v\\
-	u^{(2)} & v^{(-1)}\\
-	u^{(3)} & v^{(-2)}\\
-	\vdots & \vdots \\
-	u^{(n)} & v^{(-(n-1))}\\
-	0 & v^{(-n)}
+\begin{array}{c|c}
+u & dv\\
+u^{(1)} & v\\
+u^{(2)} & v^{(-1)}\\ 
+u^{(3)} & v^{(-2)}\\
+\vdots & \vdots \\
+u^{(n)} & v^{(-(n-1))}\\
+0 & v^{(-n)} 
 \end{array}
 $$
 
-
 $$
-\begin{array}
-\hline
+\begin{array}{lllll}
 \int udv = uv - &\hspace{-1em}\underbrace {\int vu^{(1)}dx}\\
-&(u^{(1)}v^{(-1)} - &\hspace{-1em}\underbrace{\int v^{(-1)}u^{(2)}dx})\\
-&&(u^{(2)}v^{(-2)} - &\hspace{-1.1em}\int v^{(-2)}u^{(3)}dx)\\
-&&& \hspace{1.5em}{\vdots}\\
-&&& (u^{(n-1)}v^{(-(n-1))}+ (-1)^{(n-1)} &\hspace{-1em}\underbrace{\int v^{(-(n-1))}u^{(n)}dx})\\
-&&&&(u^{(n)}v^{(-n)} - &\hspace{-2.5em}\cancelto{0}{\int v^{(-n)}u^{(n+1)}dx})
+&\hspace{-1em}(u^{(1)}v^{(-1)} - &\hspace{-1em}\underbrace{\int v^{(-1)}u^{(2)}dx})\\
+&&\hspace{-1em}(u^{(2)}v^{(-2)} - &\hspace{-2.1em}\underbrace{\int v^{(-2)}u^{(3)}dx})\\
+&&& \hspace{.5em}{\vdots}\\
+&&& \hspace{-2em}(u^{(n-1)}v^{(-(n-1))}+ (-1)^{(n-1)} & \hspace{-1em}\underbrace{\int v^{(-(n-1))}u^{(n)}dx})\\
+&&&&\hspace{-1em}(u^{(n)}v^{(-n)} - \cancelto{0}{\int v^{(-n)}u^{(n+)}dx})
 \end{array}
 $$
+
+
 
 # Application of Integrals
 
@@ -117,7 +113,7 @@ So the segment length $|P_{i-1}P_{i}| = \sqrt{(Δx)^2 + (Δy)^2}$
 
 Let's substitute this into our arc length equation above:
 $$
-\begin{align}
+\begin{aligned}
 L &= \lim_{n\to \infin}\sum_{i=1}^{n}|P_{i-1}P_{i}|\\
 &=\lim_{n\to \infin}\sum_{i=1}^{n}\sqrt{(Δx)^2 + (Δy)^2}\\
 \because \space Δy &= y_{i} - y_{i-1}, Δx = x_{i} - x_{i-1}\\
@@ -133,5 +129,5 @@ y_{i} - y_{i-1}&=f'(x_i^*)\times (x_{i} - x_{i-1})\\
 \because \int_{{\,a}}^{{\,b}}{{g\left( x \right)\,dx}} &= \mathop {\lim }\limits_{n \to \infty } \sum\limits_{i = 1}^n (\Delta x){g\left({x_i^*} \right)} \text{ (definition of definite integral)}\\
 \therefore L&=\int_{a}^{b}\sqrt{1 + (f'(x))^2}dx\\
 &=\boxed{\int_{a}^{b}\sqrt{1 + \left(\frac{dy}{dx}\right)^2}dx}\\
-\end{align}
+\end{aligned}
 $$
