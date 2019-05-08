@@ -93,7 +93,7 @@ $$
 
 For any continuous and differentiable function $f(x)$, we want to find its arc length from $x=a$ to $x=b$.
 
-![This is a graph of an unknown function on the domain a<x<b that is completely in the 1st quadrant.  The domain is split into 9 equal subintervals and the corresponding points on the graph are labeled $P_{0}$, $P_{1}$, $P_{2}$, $P_{3}$, $P_{4}$, $P_{5}$, $P_{6}$, $P_{7}$, $P_{8}$ and $P_{9}$.  A line then connects each of these points approximating the graph of the curve in each subinterval.](http://tutorial.math.lamar.edu/Classes/CalcII/ArcLength_Files/image001.gif)
+![This is a graph of an unknown function on the domain a<x<b that is completely in the 1st quadrant.  The domain is split into 9 equal subintervals and the corresponding points on the graph are labeled $P_{0}$, $P_{1}$, $P_{2}$, $P_{3}$, $P_{4}$, $P_{5}$, $P_{6}$, $P_{7}$, $P_{8}$ and $P_{9}$.  A line then connects each of these points approximating the graph of the curve in each subinterval.](../../images/Arc Length Curve Demo.png)
 
 Just like how we calculate the Riemann Sum, we can divide the arc/curve into many segments where $P_{i-1}$ to $P_{i}$ is a straight line approximating the arc. The arc length $L$ from $a$ to $b$ then becomes
 $$
@@ -107,7 +107,7 @@ L = \lim_{n\to \infin}\sum_{i=1}^{n}|P_{i-1}P_{i}|
 $$
 To calculate each segment's length $|P_{i-1}P_{i}|$, we need to apply the Pythagorean's Theorem. Let's make all segments have the same horizontal length $Δx$ so the arc is evenly divided into $n$ numbers of segments. Then, the height of each segment $Δy$ is just $Δx \times \text{slope of segment}$, or $Δx \times \frac{Δy}{Δx}$. 
 
-![](C:\Users\Kevin Li\Google Drive\Classroom\Calculus BC\images\Arc Length Segment Triangle Demo.png)
+![Arc Length Segment Triangle Demo](../../images/Arc Length Segment Triangle Demo.png)
 
 So the segment length $|P_{i-1}P_{i}| = \sqrt{(Δx)^2 + (Δy)^2}$
 
