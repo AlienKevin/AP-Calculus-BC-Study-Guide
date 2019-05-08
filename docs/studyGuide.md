@@ -60,7 +60,7 @@ uv&=\int vdu+\int udv\\ \int udv &= uv - \int vdu\\
 \end{aligned}
 $$
 
-## Proof of Tabular Integration
+## Proof of Tabular Integration[^1]
 
 $$
 \begin{array}{c|c}
@@ -89,7 +89,7 @@ $$
 
 # Application of Integrals
 
-## [Arc Length](http://tutorial.math.lamar.edu/Classes/CalcII/ArcLength.aspx)
+## Arc Length[^2]
 
 For any continuous and differentiable function $f(x)$, we want to find its arc length from $x=a$ to $x=b$.
 
@@ -131,3 +131,8 @@ y_{i} - y_{i-1}&=f'(x_i^*)\times (x_{i} - x_{i-1})\\
 &=\boxed{\int_{a}^{b}\sqrt{1 + \left(\frac{dy}{dx}\right)^2}dx}\\
 \end{aligned}
 $$
+
+# Citations
+
+[^1]: <http://ramanujan.math.trinity.edu/rdaileda/teach/s18/m3357/parts.pdf>
+[^2]: http://tutorial.math.lamar.edu/Classes/CalcII/ArcLength.aspx
